@@ -1,38 +1,153 @@
-.App {
-  text-align: center;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body{
+    background: linear-gradient(90deg, rgba(51,51,51,1) 0%, rgba(203,203,203,1) 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+width: 100%;
+height: 100vh;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+
+
+.Todo{
+    width: 80vw;
+    height: 90vh;
+background-color: rgb(220, 220, 220);
+display: flex;
+align-items: center;
+
+flex-direction: column;
+border-bottom-left-radius:25px ;
+border-top-left-radius:5px;
+border-bottom-right-radius:25px ;
+border-top-right-radius:5px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.Todo-header{
+    width: 100%;
+    height: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
 }
 
-.App-link {
-  color: #61dafb;
+.Todo-main{
+    width: 100%;
+    height: 75%;
+    display: flex;
+    justify-content: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+form{
+    width: 56%;
+    height: 40px;
+   
+display: flex;
+align-items: center;
+justify-content: center;
+margin: 5px;
+
+}
+
+.Todo-inset{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items:center;
+    justify-content: space-around;
+
+}
+
+.Todo-inset input{
+    width: 82%;
+    height: 100%;
+    outline: none;
+    border: 1px black solid;
+    padding: 2px;
+    border-bottom-left-radius:5px ;
+    border-top-left-radius:10px;
+    font-size: 1.3rem;
+}
+
+.Todo-inset .btn-inser{
+width: 15%;
+height: 100%;
+font-size: 1.2rem;
+outline: none;
+border: 1px black solid;
+border-bottom-right-radius:5px ;
+border-top-right-radius:10px;
+background-color: green;
+color: #fff;
+
+cursor: pointer;
+}
+
+
+/**/
+.Todo-main .Todo-ul{
+    list-style: none;
+    width: 90%;
+    height: 100%;
+display: flex;
+align-items: center;
+flex-direction: column;
+
+}
+
+.Todo-main .Todo-ul .Todo-li{
+    width: 100%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border: 1px rgb(175, 175, 175) solid;
+ margin-bottom: 1px;
+
+}
+.Todo-main .Todo-ul .Todo-li:nth-child(2n){
+background-color:#ccc;
+}
+.Todo-main .Todo-ul .Todo-li .Todo-title-task{
+ 
+    width: 70%;
+    height: 90%;
+    font-size: 1rem;
+    text-align: left;
+    line-height: 33px;
+}
+.Todo-main .Todo-ul .Todo-li .Todo-icon-box{
+    width: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row-reverse;
+    font-size: 1rem;
+
+}
+.Todo-main .Todo-ul .Todo-li .Todo-icon-box span{
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+
+}
+.Todo-main .Todo-ul .Todo-li .Todo-icon-box span:nth-child(1){
+    color:crimson;
+}
+.Todo-main .Todo-ul .Todo-li .Todo-icon-box span:nth-child(2){
+    color:orange;
+}
+.Todo-main .Todo-ul .Todo-li .Todo-icon-box span:nth-child(3){
+color: green;
 }
