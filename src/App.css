@@ -115,12 +115,13 @@ flex-direction: column;
 }
 .Todo-main .Todo-ul .Todo-li:nth-child(2n){
 background-color:#ccc;
+
 }
 .Todo-main .Todo-ul .Todo-li .Todo-title-task{
  
     width: 70%;
     height: 90%;
-    font-size: 1rem;
+    font-size: 1.1rem;
     text-align: left;
     line-height: 33px;
 }
@@ -128,7 +129,7 @@ background-color:#ccc;
     width: 25%;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    
     flex-direction: row-reverse;
     font-size: 1rem;
 
@@ -140,6 +141,7 @@ background-color:#ccc;
     align-items: center;
     justify-content: center;
     cursor: pointer;
+    margin-left: 5px;
 
 }
 .Todo-main .Todo-ul .Todo-li .Todo-icon-box span:nth-child(1){
