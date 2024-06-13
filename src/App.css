@@ -153,3 +153,23 @@ background-color:#ccc;
 .Todo-main .Todo-ul .Todo-li .Todo-icon-box span:nth-child(3){
 color: green;
 }
+
+
+.Err-aleart{
+    background-color: #f7f76e;
+    padding: 10px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+.Err-icon span{
+    margin-left: 5px;
+}
+
+.Err-return{
+    color: rgb(0, 0, 0);
+    font-size: 1.5rem;
+    font-weight: 900;
+}
