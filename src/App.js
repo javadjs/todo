@@ -10,21 +10,7 @@ import { taskitemsContext } from "./context/taskitemsContext";
 
 const App = () => {
   const [taskitems, settaskitems] = useState([
-    {
-      Id: 1,
-      title: "number 1 task",
-      done:false
-    },
-    {
-      Id: 2,
-      title: "number 2 task",
-      done:false
-    },
-    {
-      Id: 3,
-      title: "number 3 task",
-      done:false
-    }
+
   ]);
 
 
